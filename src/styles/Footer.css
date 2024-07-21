@@ -1,0 +1,31 @@
+.footer {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 99.99%, rgba(0, 0, 0, 0) 100%);
+padding: 20px 50px 50px 50px;
+border: 1px solid #000000
+}
+
+.footer p {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+}
+
+.footer a {
+    text-decoration: underline;
+    color: #5B6AAA;
+}
+
+.footer ul {
+    text-align: right;
+}
+
+.footer li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    transition: color 0.8s ease;
+}
+
+.footer li:hover {
+    color: #D7A6D8;
+    cursor: pointer;
+}

@@ -1,0 +1,162 @@
+.signup {
+    flex: 1;
+    background-image: url("../assets/bg.png");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000;
+    width: 100%;
+}
+
+.button {
+    background: linear-gradient(180deg, #2B3A63 0%, #B382D3 100%);
+width: max-content;
+padding: 2px 8px;
+font-size: 1.2rem;
+}
+
+.signup .main {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup .sidebar {
+    width: 25%;
+    height: 100%;
+    background: #FFFFFF1A;
+    border: 1px solid #FFFFFF40 ;
+    border-left: none ;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sidebar h2 {
+    font-size: 2.2rem;
+    line-height: 2.3rem;
+    margin-bottom: 40px;
+}
+
+.main .container {
+    width: 55%;
+    height: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 45px 0px #000000A6;
+    border: 1px solid #FFFFFF40;
+    background: #FFFFFF05;
+backdrop-filter: blur(15px);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+border-radius: 20px;
+}
+
+.main img {
+    width: 200px;
+}
+
+.main h1 {
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+}
+
+.main form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 70%;
+}
+
+.main form label, form p {
+    font-size: 0.95rem;
+    margin-bottom:2px;
+}
+
+form input {
+    margin-bottom: 25px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 0px 25px 0px #000000;
+border-radius: 10px;
+background: #00000080;
+}
+
+form input::placeholder {
+    color: #fff
+}
+
+form button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .signup .main {
+        width: 70%;
+    }
+    .signup .sidebar {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .signup {
+        flex-direction: column-reverse;
+    }
+
+    .signup .main {
+        width: 90%;
+        height: 75%;
+    }
+
+    .signup .main h1 {
+        margin-bottom: 10px;
+        font-size: 1.8rem;
+    }
+    .signup .main .container {
+        width: 80%;
+    }
+    .signup .main form input {
+        margin-bottom: 15px;
+    }
+    .sidebar .main .container button {
+        margin-top: 10px;
+    }
+    
+    .signup .sidebar {
+        width: 90%;
+        height: 10%;
+        background-color: transparent;
+        backdrop-filter: blur(0);
+        border: none;
+        margin: 40px;
+    }
+    .signup .sidebar br {
+        display: none;
+    }
+    .signup .sidebar h2 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .signup .main .container {
+        width: 95%;
+    }
+}

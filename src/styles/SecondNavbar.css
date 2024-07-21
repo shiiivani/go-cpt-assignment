@@ -1,0 +1,21 @@
+.second-navbar {
+    width: 100%;
+    padding: 2px 8px;
+    box-shadow: 0px 0px 30px 0px #000000E3;
+    border: 1px solid #FFFFFF26;
+    background: #FFFFFF07 !important;
+    border-right: none;
+    border-left: none;
+    backdrop-filter: blur(10px);
+    z-index: 3;
+    position: fixed;
+    top: 0;
+}
+
+.second-navbar:hover {
+    background: #FFFFFF1A;
+}
+
+.second-navbar img {
+    cursor: pointer;
+}

@@ -1,0 +1,220 @@
+.profile {
+    background-image: url("../assets/bg3.png");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: #fff;
+    padding-bottom: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profile.on {
+    background-color: #000; 
+}
+
+
+.profile .toggle-container {
+    padding: 2px;
+    align-self: flex-end;
+background: linear-gradient(180deg, #F197F4 0%, #2B3A63 100%);
+border-radius: 15px;
+box-shadow: 0px 0px 5px 0px #0000008C;
+position:absolute;
+top: 80px;
+right: 10px;
+}
+
+.profile  .toggle-switch {
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .profile  .toggle-switch.on {
+    background-color: #000;
+  }
+
+  .profile  .toggle-switch.off {
+    background-color: #fff
+  }
+  
+  .profile  .toggle-switch-circle {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile   .toggle-switch.on .toggle-switch-circle {
+    /* transform: translateX(30px); */
+    color: #000;
+    }
+
+    .profile   .toggle-circle-container {
+    transition: transform 0.3s ease;
+    padding:2px;
+  }
+
+  .profile .toggle-circle-container.off {
+    background: linear-gradient(180deg, #F197F4 0%, #2B3A63 100%);
+    border-radius: 50%;
+    padding: 2px
+  }
+
+  .profile  .toggle-circle-container.on {
+    transform: translateX(30px);
+    background: linear-gradient(180deg, #F197F4 0%, #2B3A63 100%);
+    box-shadow: 0px 4px 10px 0px rgba(255, 255, 255, 0.45);
+    border-radius: 50%;
+    padding: 2px
+  }
+
+  .profile  .toggle-switch-circle.on {
+    background-color: #000;
+  }
+
+  .profile   .toggle-switch-circle.off {
+    background-color: #fff;
+  }
+
+  .profile  .toggle-circle-container.off {
+    background-color: transparent;
+  }
+
+.button {
+    background: linear-gradient(180deg, #2B3A63 0%, #B382D3 100%);
+width: max-content;
+padding: 2px 8px;
+font-size: 1.2rem;
+}
+
+.profile .container {
+    width: 45%;
+    height: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    box-shadow: 0px 0px 45px 0px #000000A6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    background: #FFFFFF05;
+    border: 1px solid #FFFFFF40;
+    box-shadow: 0px 0px 45px 0px #000000A6;
+}
+
+.profile .container h1 {
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+    position: absolute;
+    bottom: -25%;
+    left: -20%;
+    text-shadow: 2px 2px 6px #000
+}
+
+.profile form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 60%;
+    margin-top: 20px;
+}
+
+.profile form label, form p {
+    font-size: 0.95rem;
+    margin-bottom:3px;
+}
+
+.profile label.off, .profile form p.off {
+    color: #000;
+}
+
+form p:hover {
+  cursor: pointer;
+}
+
+form input {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 0px 25px 0px #000000;
+border-radius: 10px;
+background: #00000080;
+}
+
+form input::placeholder {
+    color: #fff
+}
+
+.profile form button {
+    margin-left: auto;
+    margin-right: auto;
+     width: 100%;
+    padding: 3px;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 0px 25px 0px #000000;
+border-radius: 10px;
+background: #00000080;
+margin-top: 15px;
+}
+
+.profile form button:hover {
+    background: #FFFFFF70;
+}
+
+.profile .back-btn {
+    font-family: 'Padyakke Expanded One';
+    font-size: 1.3rem;
+    margin-top: 10px;
+    text-shadow: 2px 2px 6px #000
+}
+
+.profile .back-btn:hover {
+    cursor: pointer
+}
+
+.profile .back-btn.off {
+color: #000;
+}
+
+@media screen and (max-width: 1028px) {
+  .profile .container {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .profile .toggle-container {
+    top: 60px;
+  }
+  .profile .container {
+    width: 80%;
+    margin-top: 120px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .profile .container {
+    width: 90%;
+  }
+  .profile .container form {
+    width: 75%;
+  }
+}
