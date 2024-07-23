@@ -10,10 +10,10 @@ function Signup() {
   return (
     <motion.div
       className="signup flex items-center"
-      initial={{ x: 0, opacity: 1 }}
-      animate={{ x: 0, opacity: 1 }}
-      exit={{ x: "100%", opacity: 0 }}
-      transition={{ ease: "easeOut", duration: 1 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ ease: "easeOut", duration: 0.6 }}
     >
       <div className="sidebar">
         <h2>

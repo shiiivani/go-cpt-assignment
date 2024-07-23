@@ -18,10 +18,10 @@ function UploadNote() {
   return (
     <motion.div
       className={`upload-note ${isOn ? "on" : "off"}`}
-      initial={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ ease: "easeOut", duration: 0.8 }}
+      transition={{ ease: "easeOut", duration: 0.6 }}
     >
       <div className="second-navbar flex items-center justify-between">
         <img

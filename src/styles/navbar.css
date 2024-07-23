@@ -26,6 +26,24 @@
     font-size: 1.3rem;
 }
 
+.navbar .middle p {
+    position: relative;
+    display: inline-block;
+    color: #fff; /* Initial text color */
+    background-image: linear-gradient(90deg, #E69AE8 50%, #fff 50%);
+    background-size: 200%;
+    background-position: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background-position 0.5s ease; /* Smooth transition */
+}
+
+/* Hover effect to fill text color */
+.navbar .middle p:hover {
+    cursor: pointer;
+    background-position: 0; /* Move gradient to fill text with pink */
+}
+
 .navbar .right button {
     color: #fff;
     box-shadow: 0px 0px 20px 0px #00000066;

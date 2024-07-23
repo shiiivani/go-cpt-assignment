@@ -54,10 +54,10 @@ function HomePage() {
   return (
     <motion.div
       className={`homePage ${isOn ? "on" : "off"}`}
-      initial={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ ease: "easeOut", duration: 0.8 }}
+      transition={{ ease: "easeOut", duration: 0.6 }}
     >
       <div class="navbar flex justify-between items-center">
         <div class="left flex items-center">

@@ -18,10 +18,10 @@ function ChangePassword() {
   return (
     <motion.div
       className={`changePassword ${isOn ? "on" : "off"}`}
-      initial={{ x: "100%", opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      exit={{ x: "-100%", opacity: 0 }}
-      transition={{ ease: "easeOut", duration: 0.8 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ ease: "easeOut", duration: 0.6 }}
     >
       <div className="second-navbar flex items-center justify-between">
         <img
