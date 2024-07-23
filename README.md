@@ -18,7 +18,7 @@ This project was developed as an assignment using React.js and Tailwind CSS. It 
 
 ## Hosted Website
 
-You can view the live project [here](https://your-hosted-website-link.com).
+You can view the live project [here](https://go-cpt-assignment.vercel.app/).
 
 ## Installation
 
